@@ -862,7 +862,7 @@ def CheckForUpdate():
 	#avoid request spam
 	if NewestVersion == 0:
 		try:
-			req = urllib.request.Request('https://https://github.com/Imdizzy/dizzy/commit/5576cdf83749fe08996abe6f6a624d095451f80c', headers={'User-Agent': 'Mozilla/5.0'})
+			req = urllib.request.Request('https://github.com/Imdizzy/dizzy/blob/main/boi.py', headers={'User-Agent': 'Mozilla/5.0'})
 			with urllib.request.urlopen(req) as f:
 				lines = str(f.read().decode("utf-8")).split()
 				for num, line in enumerate(lines):
